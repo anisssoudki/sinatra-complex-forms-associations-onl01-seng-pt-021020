@@ -1,1 +1,22 @@
-index.erb
+<div class="jumbotron">
+
+
+
+  <h1 class="display-1">Hello, Owners!</h1>
+ 
+ 
+  </div>
+
+<% Owner.all.each do |o| %>
+
+<div class="d-flex flex-row">
+<h1> <span class="badge badge-secondary"><%=o.name%> </span></h1>
+ <h1> <span class="badge badge-secondary"><%=o.id%> </span></h1>
+ </div>
+
+<% end %>
+
+
+
+
+<h1> <span class="badge badge-secondary"></span></h1>

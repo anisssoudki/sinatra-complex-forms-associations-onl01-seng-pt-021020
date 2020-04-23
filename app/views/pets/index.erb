@@ -1,1 +1,9 @@
-index.erb
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h2 class="display-1">PETS: <br>
+    <%@pets.each do |pet| %>
+                <strong class="text-danger"><%= pet.name %></strong>
+                <%end%>
+    </h2>
+  </div>
+</div>
